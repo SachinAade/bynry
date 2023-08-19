@@ -1,0 +1,7 @@
+<div *ngFor="let profile of profiles">
+    <h2>{{ profile.name }}</h2>
+    <img [src]="profile.photo" alt="{{ profile.name }} Photo" />
+    <p>{{ profile.description }}</p>
+    <button (click)="showAddressOnMap(profile)">Show Address on Map</button>
+</div>
+  
